@@ -17,8 +17,8 @@ jobs:
       - name: 📂 Sincronizando archivos via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp-novazu.alwaysdata.net  # Change if using another host
-          username: novazu
+          server: ftp-johis.alwaysdata.net  # Change if using another host
+          username: johis
           password: clase1234
           server-dir: www/  # Replace with your correct path
           protocol: ftps
