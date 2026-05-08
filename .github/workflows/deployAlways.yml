@@ -18,8 +18,8 @@ jobs:
         with:
           server: ftp-johis.alwaysdata.net # Change if using another host
           username: johis
-          password: clase1234
-          server-dir: www/  # Replace with your correct path
+          password: Clase1234
+          server-dir: www/ # Replace with your correct path
           protocol: ftps
           timeout: 86400000
           log-level: standard
