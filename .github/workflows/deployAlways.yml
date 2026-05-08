@@ -17,9 +17,9 @@ jobs:
       - name: 📂 Sincronizando archivos via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp-novazu.alwaysdata.net  # Change if using another host
-          username: novazu
-          password: clase1234
+          server: ftp-marcela.alwaysdata.net  # Change if using another host
+          username: marcela
+          password: lina123
           server-dir: www/  # Replace with your correct path
           protocol: ftps
           timeout: 86400000
