@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia del Futbol - Index 2</title>
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --paper: #fffdfa;
+      --ink: #1c1917;
+      --accent: #9a3412;
+      --line: #d6d3d1;
+      --chip: #ffedd5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        linear-gradient(0deg, rgba(154, 52, 18, 0.07), rgba(154, 52, 18, 0.07)),
+        repeating-linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.01) 0px,
+          rgba(0, 0, 0, 0.01) 1px,
+          transparent 1px,
+          transparent 18px
+        ),
+        var(--bg);
+    }
+
+    .container {
+      width: min(980px, 92%);
+      margin: 2rem auto 3rem;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1.6rem 1.2rem 2rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+      animation: rise 650ms ease both;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      letter-spacing: 0.02em;
+      color: var(--accent);
+    }
+
+    .sub {
+      margin: 0.45rem 0 1rem;
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 0.9rem;
+      margin: 1rem 0 1.5rem;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 0.85rem;
+      background: #ffffff;
+    }
+
+    .card h2 {
+      margin: 0 0 0.4rem;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    .card p {
+      margin: 0;
+      line-height: 1.45;
+    }
+
+    .indice {
+      border-top: 2px solid var(--line);
+      padding-top: 1rem;
+    }
+
+    .indice h2 {
+      margin: 0 0 0.7rem;
+      font-size: 1.25rem;
+      color: var(--accent);
+    }
+
+    .indice ul {
+      margin: 0;
+      padding-left: 1rem;
+      line-height: 1.7;
+    }
+
+    .indice a {
+      color: #7c2d12;
+      text-decoration: none;
+      border-bottom: 1px dashed #9a3412;
+    }
+
+    .indice a:hover,
+    .indice a:focus {
+      background: var(--chip);
+      outline: none;
+    }
+
+    section {
+      margin-top: 1.35rem;
+      border-top: 1px solid var(--line);
+      padding-top: 1rem;
+    }
+
+    section h3 {
+      margin: 0 0 0.45rem;
+      color: #7c2d12;
+      font-size: 1.2rem;
+    }
+
+    section p {
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 0.55rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid #fdba74;
+      background: var(--chip);
+      font-size: 0.82rem;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Historia del Futbol</h1>
+    <p class="sub">Segunda version del index: formato cronologico corto, claro y listo para ampliar.</p>
+
+    <div class="grid">
+      <article class="card">
+        <h2>Edad Antigua</h2>
+        <p>Hubo juegos de pelota en China y otras culturas, considerados antecedentes del futbol.</p>
+      </article>
+      <article class="card">
+        <h2>Siglo XIX</h2>
+        <p>En Inglaterra se unificaron reglas y nacio la base del futbol moderno que hoy conocemos.</p>
+      </article>
+      <article class="card">
+        <h2>Siglo XX</h2>
+        <p>Con la FIFA y los mundiales, el futbol se volvio un fenomeno global.</p>
+      </article>
+    </div>
+
+    <div class="indice">
+      <h2>Indice</h2>
+      <ul>
+        <li><a href="#inicio">1. Primeros antecedentes</a></li>
+        <li><a href="#reglas">2. Reglas modernas</a></li>
+        <li><a href="#fifa">3. Creacion de FIFA</a></li>
+        <li><a href="#mundial">4. Primer mundial</a></li>
+        <li><a href="#actual">5. Futbol actual</a></li>
+      </ul>
+    </div>
+
+    <section id="inicio">
+      <h3>1. Primeros antecedentes</h3>
+      <p>Varios pueblos practicaron juegos de pelota con normas locales. Estos juegos no eran futbol moderno, pero inspiraron su evolucion.</p>
+      <span class="badge">Antes de 1800</span>
+    </section>
+
+    <section id="reglas">
+      <h3>2. Reglas modernas</h3>
+      <p>Entre 1848 y 1863 se construyo el marco reglamentario en Inglaterra, con la Football Association como punto clave.</p>
+      <span class="badge">1848 - 1863</span>
+    </section>
+
+    <section id="fifa">
+      <h3>3. Creacion de FIFA</h3>
+      <p>En 1904, la FIFA surgio para organizar la competencia internacional y coordinar asociaciones nacionales.</p>
+      <span class="badge">1904</span>
+    </section>
+
+    <section id="mundial">
+      <h3>4. Primer mundial</h3>
+      <p>Uruguay organizo la Copa Mundial inaugural en 1930 y marco el comienzo de la competencia mas importante del futbol.</p>
+      <span class="badge">1930</span>
+    </section>
+
+    <section id="actual">
+      <h3>5. Futbol actual</h3>
+      <p>Hoy el futbol integra ciencia deportiva, analitica, tecnologia VAR y una audiencia digital masiva en todos los continentes.</p>
+      <span class="badge">Siglo XXI</span>
+    </section>
+  </main>
+</body>
+</html>
