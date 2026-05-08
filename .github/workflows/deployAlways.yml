@@ -1,9 +1,7 @@
 name: 🚀 Tarea de Despliegue
 
 on:
-  push:
-    branches:
-      - main
+  push: 
 
 jobs:
   deploy:
